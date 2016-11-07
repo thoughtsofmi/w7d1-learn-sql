@@ -24,17 +24,17 @@ select count(8) from users;
 
 
 
-**6..How much would it cost to buy one of each tool?**
+**6. How much would it cost to buy one of each tool?**
 
 
 
-**7..How many total items did we sell?**
+**7. How many total items did we sell?**
 
 
 
-**8..How much was spent on books?**
+**8. How much was spent on books?**
 
 
 
-**9..Simulate buying an item by inserting a User for yourself and an Order for that User.**
+**9. Simulate buying an item by inserting a User for yourself and an Order for that User.**
 
