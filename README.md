@@ -11,8 +11,6 @@ select count(*) from users;
 **2.  What are the 5 most expensive items?**
 
 
-title                price     
-
 Small Cotton Gloves  9984      
 Small Wooden Comput  9859      
 Awesome Granite Pan  9790      
@@ -25,8 +23,7 @@ select title, price from items order by price DESC limit 5;
 
 
 **3.  What's the cheapest book? (Does that change for "category is exactly 'book'" versus "category contains 'book'"?)**
-
-category    title                    price     
+ 
 
 Books       Ergonomic Granite Chair  1496 
 ```
