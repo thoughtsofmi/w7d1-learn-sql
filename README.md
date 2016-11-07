@@ -9,6 +9,8 @@ Questions:
 select count(*) from users;
 ```
 **2.  What are the 5 most expensive items?**
+
+
 title                price     
 
 Small Cotton Gloves  9984      
