@@ -19,7 +19,8 @@ Awesome Granite Pan  9790
 Sleek Wooden Hat     9390      
 Ergonomic Steel Car  9341 
 
-``` select title, price from items order by price DESC limit 5;
+```
+select title, price from items order by price DESC limit 5;
 ```
 
 
