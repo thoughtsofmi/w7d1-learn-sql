@@ -3,6 +3,7 @@
 Questions:
 
 **How many users are there?**
+
 50
 ```
 select count(8) from users;
