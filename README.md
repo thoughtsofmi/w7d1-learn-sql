@@ -26,7 +26,12 @@ select title, price from items order by price DESC limit 5;
 
 **3.  What's the cheapest book? (Does that change for "category is exactly 'book'" versus "category contains 'book'"?)**
 
+category    title                    price     
 
+Books       Ergonomic Granite Chair  1496 
+```
+select category, title, price from items where category like '%book%' order by price limit 1;
+```
 
 **4.  Who lives at "6439 Zetta Hills, Willmouth, WY"? Do they have another address?**
 
