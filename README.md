@@ -43,12 +43,11 @@ select addresses.user_id, users.first_name, users.last_name from addresses inner
 
 **5.  Correct Virginie Mitchell's address to "New York, NY, 10108".**
 
-I looked up Virginie's id by: select users.id, users.first_name, users.last_name from users where first_name='Virginie'; To correct her address I did: Command - update addresses set city='New York', zip='10108' where id=41;
 
-A.) I Found out the id for virginie first then updated her address. Command Used: select users.id, users.first_name, users.last_name from users where first_name like '%virginie%'; Command Used: select users.id, users.first_name, users.last_name from users inner join addresses on users.id=addresses.user_id; Command Used: update addresses set city='New York', state='NY', zip='10108' where addresses.id=41;
-
+```
  select id from users where last_name='Mitchell';
-
+ update addresses set city='New York', zip='10108' where id=41;
+```
 
 **6. How much would it cost to buy one of each tool?**
 
@@ -59,12 +58,20 @@ select sum(price) from items where category like '%tools%';
 
 **7. How many total items did we sell?**
 
-
+2125  
+```
+select sum(quantity) from orders;
+```
 
 **8. How much was spent on books?**
 
-
+```
+select sum(items.price*orders.quantity) from items inner join orders on items.id=orders.item_id where category='Books';
+```
 
 **9. Simulate buying an item by inserting a User for yourself and an Order for that User.**
-insert
+```
+insert into users values(51, 'Young Mi', 'Kim','ymkim23@gmail.com');
+insert into orders(user_id, item_id, quantity, created_at) values(51, 97, 1, datetime());
+```
 
