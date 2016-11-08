@@ -34,7 +34,7 @@ select category, title, price from items where category like '%book%' order by p
 
 Corrine Little
 
-other address is 54369 Wolff Forg, Lake Bryon, CA 31587
+yes, 54369 Wolff Forg, Lake Bryon, CA 31587
 ```
 select user_id from addresses where street like '%Zetta%'; //40
 select * from addresses where user_id like '40';  
