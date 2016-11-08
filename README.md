@@ -65,6 +65,8 @@ select sum(quantity) from orders;
 
 **8. How much was spent on books?**
 
+420566     
+
 ```
 select sum(items.price*orders.quantity) from items inner join orders on items.id=orders.item_id where category='Books';
 ```
